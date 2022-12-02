@@ -1,0 +1,131 @@
+{
+  "taskOper": "OR",
+  "groupByLayer": false,
+  "zoomto": false,
+  "zoombackto": false,
+  "allowCustom": false,
+  "allowResetAll": false,
+  "allowTurnOffAll": false,
+  "filters": [
+    {
+      "layerId": "184d2f3cec8-layer-41",
+      "url": "https://services3.arcgis.com/ph3kXj7c6Bqf3eeX/arcgis/rest/services/Stasiun_KA_Jawa/FeatureServer/0",
+      "name": "Stasiun KA [Aktif]",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "AKTIF",
+              "label": "AKTIF",
+              "dateFormat": "",
+              "shortType": "number",
+              "type": "esriFieldTypeDouble"
+            },
+            "operator": "numberOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "value",
+              "value": 1
+            },
+            "interactiveObj": "",
+            "caseSensitive": false,
+            "displaySQL": "AKTIF = 1",
+            "expr": "AKTIF = 1"
+          }
+        ],
+        "expr": "AKTIF = 1",
+        "displaySQL": "AKTIF = 1"
+      },
+      "icon": null,
+      "enableMapFilter": true,
+      "autoApplyWhenWidgetOpen": false,
+      "collapse": false,
+      "symbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      }
+    },
+    {
+      "layerId": "184d2f4f0e2-layer-81",
+      "url": "https://services3.arcgis.com/ph3kXj7c6Bqf3eeX/arcgis/rest/services/Rel_KA_Jawa/FeatureServer/1",
+      "name": "Rel KA {Aktif]",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "STATUS",
+              "label": "STATUS",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "value",
+              "value": "Aktif"
+            },
+            "interactiveObj": "",
+            "caseSensitive": false,
+            "displaySQL": "STATUS = 'Aktif'",
+            "expr": "STATUS = 'Aktif'"
+          }
+        ],
+        "expr": "STATUS = 'Aktif'",
+        "displaySQL": "STATUS = 'Aktif'"
+      },
+      "icon": null,
+      "enableMapFilter": true,
+      "autoApplyWhenWidgetOpen": false,
+      "collapse": false,
+      "symbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSDiamond",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      }
+    }
+  ]
+}
